@@ -1,0 +1,159 @@
+
+
+body {
+  text-align: left;
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  margin: 32px 120px;
+  font-family:"Sporting Grotesque_Regular", "AdobeBlank";
+}
+
+
+h1{
+  font-size: 54px;
+  line-height: 81px;
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+  letter-spacing: -0.05em;
+}
+
+h2{
+  font-size:36px;
+  padding-top:8px;
+  line height:54px;
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+  letter-spacing: -0.05em;
+
+}
+
+h3{
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+}
+
+h4{
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: regular;
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+}
+
+p{
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 24px 0px;
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+  font-family: 'Aria','Helvetica-Neue',sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.width{
+  max-width: 40%;
+}
+
+
+#project{
+  padding:50px 0px;
+}
+
+ a{
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  padding-bottom:4px;
+  border-bottom: 2px solid red;
+}
+
+ a:hover{
+  padding-bottom:6px;
+  border-bottom: 2px solid red;
+}
+
+
+#intro-header{
+  padding: 200px 0px;
+  width: 60%;
+}
+
+#block-header{
+  margin: 50px 0px;
+  max-width: 50%;
+}
+
+.item{
+  margin: 50px 0px;
+  background-color: pink;
+  height: 500px;
+  width: 100%;
+  opacity: 1;
+}
+.first{
+    margin-right: 10%;
+}
+
+.t-small{
+  margin-top: 100px;
+}
+
+.t-medium{
+  margin-top: 200px;
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 600px) {
+    .App {
+        margin: 16px 40px;
+    }
+
+    #intro-header{
+    width: 100%;
+    padding: 100px 0px;
+    }
+
+    h1{
+      font-size: 28px;
+      line-height:48px;
+    }
+    h2{
+      font-size:24px;
+      line height:36px;
+    }
+
+    #block-header{
+      margin: 25px 0px;
+      max-width: 100%;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .width{
+      max-width: 100%;
+    }
+
+}
