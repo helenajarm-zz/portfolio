@@ -57,6 +57,7 @@ p{
 .container{
   display: flex;
   flex-direction: row;
+  visibility: hidden;
 }
 
 .container-column{
@@ -91,7 +92,8 @@ p{
   width: 60%;
 }
 
-#block-header{
+.block-header{
+  visibility: hidden;
   margin: 50px 0px;
   max-width: 50%;
 }
@@ -130,6 +132,7 @@ p{
     }
 
     #intro-header{
+      visibility: hidden;
     width: 100%;
     padding: 100px 0px;
     }
