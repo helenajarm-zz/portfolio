@@ -91,7 +91,7 @@ a:hover {
   }
 }
 .background {
-  background-position: center;
+  background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -110,6 +110,9 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+.width-half {
+  max-width: 45%;
+}
 .width {
   max-width: 40%;
 }
@@ -119,11 +122,11 @@ a:hover {
   }
 }
 .project {
-  padding: 50px 0px;
+  padding: 0px 0px;
 }
 .block-header {
   visibility: hidden;
-  margin: 50px 0px;
+  margin: 100px 0px;
   max-width: 50%;
 }
 @media screen and (max-width: 600px) {
@@ -133,7 +136,7 @@ a:hover {
   }
 }
 .item {
-  margin: 50px 0px;
+  margin: 0px 0px;
   width: 100%;
 }
 .tiny {
@@ -145,23 +148,28 @@ a:hover {
 .full {
   padding-top: 76.5%;
 }
+.hundred {
+  margin: 100px 0px;
+}
+.fifty {
+  margin: 50px 0px;
+}
 .square {
   padding-top: 52%;
 }
 .first {
   margin-right: 10%;
 }
-.t-small {
-  margin-top: 100px;
-}
-.t-medium {
-  margin-top: 200px;
+.pushup {
+  margin-top: -100px;
 }
 .edge-left {
   margin-left: -120px;
+  background-position: left top;
 }
 .edge-right {
   margin-right: -120px;
+  background-position: bottom;
 }
 #accent {
   position: absolute;

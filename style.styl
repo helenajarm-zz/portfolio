@@ -78,7 +78,7 @@ a
     padding: 100px 0px;
 
 .background
-  background-position: center;
+  background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -94,6 +94,9 @@ a
   display: flex;
   flex-direction: column;
 
+.width-half
+  max-width 45%
+
 .width
   max-width: 40%;
   @media screen and (max-width: 600px)
@@ -101,18 +104,18 @@ a
 
 
 .project
-  padding:50px 0px;
+  padding:0px 0px;
 
 .block-header
   visibility: hidden;
-  margin: 50px 0px;
+  margin: 100px 0px;
   max-width: 50%;
   @media screen and (max-width: 600px)
     margin: 25px 0px;
     max-width: 100%;
 
 .item
-  margin: 50px 0px;
+  margin: 0px 0px;
   width: 100%;
 
 .tiny
@@ -124,23 +127,29 @@ a
 .full
   padding-top: 76.50%
 
+.hundred
+  margin 100px 0px
+
+.fifty
+  margin 50px 0px
+
 .square
  padding-top: 52%
 
 .first
   margin-right: 10%;
 
-.t-small
-  margin-top: 100px;
-
-.t-medium
-  margin-top: 200px;
+.pushup
+  margin-top -100px
 
 .edge-left
   margin-left -120px
+  background-position left top
+
 
 .edge-right
   margin-right -120px
+  background-position bottom
 
 #accent
   position: absolute
