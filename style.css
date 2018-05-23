@@ -4,11 +4,11 @@ body {
   font-size: 16px;
   color: #000;
   margin: 32px 120px 0px 120px;
-  font-family: "Sporting Grotesque_Regular", "AdobeBlank";
+  font-family: "FoundersGrotesk", 'Helvetica-Neue', sans-serif;
 }
 @media screen and (max-width: 600px) {
   body {
-    margin: 16px 40px;
+    margin: 0px 40px;
   }
 }
 h1,
@@ -18,59 +18,53 @@ h4,
 p {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
+  font-weight: normal;
 }
 h1 {
-  font-weight: normal;
-  font-size: 54px;
-  line-height: 81px;
-  letter-spacing: -0.05em;
+  font-size: 81px;
+  line-height: 85px;
+  letter-spacing: -0.02em;
 }
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 28px;
-    line-height: 48px;
+    font-size: 54px;
+    line-height: 60px;
   }
 }
 h2 {
-  font-size: 36px;
+  font-size: 54px;
   padding-top: 8px;
-  line: height 54px;
-  letter-spacing: -0.05em;
+  line: height 81px;
+  letter-spacing: -0.02em;
 }
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 36px;
   }
 }
 h3 {
+  font-size: 24px;
   letter-spacing: 0.05em;
   line-height: 24px;
-  font-family: 'Aria', 'Helvetica-Neue', sans-serif;
-  font-weight: normal;
 }
 h4,
 p {
-  line-height: 24px;
-  font-size: 11px;
+  font-size: 18px;
+  line-height: 28px;
   color: rgba(0,0,0,0.7);
-  line-height: 24px;
 }
 h4 {
   letter-spacing: 0.05em;
-  font-weight: regular;
   color: rgba(0,0,0,0.4);
 }
 p {
   padding: 24px 0px;
-  font-size: 14px;
-  font-family: 'Aria', 'Helvetica-Neue', sans-serif;
 }
 a {
   color: rgba(0,0,0,0.7);
+  font-family: "FoundersGrotesk-Italic", 'Helvetica-Neue', sans-serif !important;
   font-weight: normal;
-  font-size: 14px;
-  font-family: 'Aria', 'Helvetica-Neue', sans-serif;
   text-decoration: none;
   padding-bottom: 4px;
   border-bottom: 2px solid #f00;
@@ -81,13 +75,19 @@ a:hover {
 }
 .intro-header {
   visibility: hidden;
-  padding: 200px 0px;
-  width: 60%;
+  padding: 120px 0px 80px 0px;
+  width: 55%;
+}
+.intro-header h4 {
+  margin-top: 25px;
+}
+.intro-header p {
+  padding-top: 0px !important;
 }
 @media screen and (max-width: 600px) {
   .intro-header {
     width: 100%;
-    padding: 100px 0px;
+    padding: 180px 0px 100px;
   }
 }
 .background {
@@ -113,6 +113,11 @@ a:hover {
 .width-half {
   max-width: 45%;
 }
+@media screen and (max-width: 600px) {
+  .width-half {
+    max-width: 100%;
+  }
+}
 .width {
   max-width: 40%;
 }
@@ -127,11 +132,11 @@ a:hover {
 .block-header {
   visibility: hidden;
   margin: 100px 0px;
-  max-width: 50%;
+  max-width: 60%;
 }
 @media screen and (max-width: 600px) {
   .block-header {
-    margin: 25px 0px;
+    margin: 50px 0px;
     max-width: 100%;
   }
 }
@@ -142,8 +147,32 @@ a:hover {
 .tiny {
   padding-top: 29%;
 }
+@media screen and (max-width: 600px) {
+  .tiny {
+    padding-top: 56%;
+    margin-top: 50px;
+  }
+}
 .small {
   padding-top: 34%;
+}
+@media screen and (max-width: 600px) {
+  .small {
+    padding-top: 76.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tall {
+    padding-top: 160% !important;
+  }
+}
+.collage {
+  padding-top: 40%;
+}
+@media screen and (max-width: 600px) {
+  .collage {
+    padding-top: 132% !important;
+  }
 }
 .full {
   padding-top: 76.5%;
@@ -151,11 +180,26 @@ a:hover {
 .hundred {
   margin: 100px 0px;
 }
+@media screen and (max-width: 600px) {
+  .hundred {
+    margin: 50px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fiftym {
+    margin: 50px 0px;
+  }
+}
 .fifty {
   margin: 50px 0px;
 }
 .square {
   padding-top: 52%;
+}
+@media screen and (max-width: 600px) {
+  .square {
+    padding-top: 80%;
+  }
 }
 .first {
   margin-right: 10%;
@@ -163,9 +207,19 @@ a:hover {
 .pushup {
   margin-top: -100px;
 }
+@media screen and (max-width: 600px) {
+  .pushup {
+    margin-top: -50px;
+  }
+}
 .edge-left {
   margin-left: -120px;
   background-position: left top;
+}
+@media screen and (max-width: 600px) {
+  .edge-left {
+    margin-left: -60px;
+  }
 }
 .edge-right {
   margin-right: -120px;
@@ -179,8 +233,23 @@ a:hover {
   right: 0px;
   background-position: right;
 }
+@media screen and (max-width: 600px) {
+  #accent {
+    height: 200px;
+  }
+}
 #footer {
   width: 100%;
   height: 220px;
   background-position: bottom;
+}
+@media screen and (max-width: 600px) {
+  #footer {
+    width: 130%;
+    height: 200px;
+    background-position: bottom left;
+    margin-left: -40px;
+    margin-right: -40px;
+    background-size: cover;
+  }
 }
