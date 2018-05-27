@@ -1,7 +1,7 @@
 body {
   text-align: left;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   color: #000;
   margin: 32px 120px 0px 120px;
   font-family: "FoundersGrotesk", 'Helvetica-Neue', sans-serif;
@@ -50,8 +50,8 @@ h3 {
 }
 h4,
 p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 32px;
   color: rgba(0,0,0,0.7);
 }
 h4 {
@@ -63,7 +63,6 @@ p {
 }
 a {
   color: rgba(0,0,0,0.7);
-  font-family: "FoundersGrotesk-Italic", 'Helvetica-Neue', sans-serif !important;
   font-weight: normal;
   text-decoration: none;
   padding-bottom: 4px;
@@ -72,6 +71,17 @@ a {
 a:hover {
   padding-bottom: 6px;
   border-bottom: 2px solid #f00;
+}
+.subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+li {
+  display: flex;
+}
+li h4 {
+  margin-right: 40px;
 }
 .intro-header {
   visibility: hidden;
@@ -109,6 +119,7 @@ a:hover {
 .container-column {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .width-half {
   max-width: 45%;
@@ -123,6 +134,14 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .width {
+    max-width: 100%;
+  }
+}
+.width-70 {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .width-70 {
     max-width: 100%;
   }
 }
@@ -144,6 +163,11 @@ a:hover {
   margin: 0px 0px;
   width: 100%;
 }
+.item h4 {
+  margin-top: -30px;
+  font-size: 16px;
+  color: rgba(0,0,0,0.7);
+}
 .tiny {
   padding-top: 29%;
 }
@@ -154,7 +178,7 @@ a:hover {
   }
 }
 .small {
-  padding-top: 34%;
+  padding-top: 40%;
 }
 @media screen and (max-width: 600px) {
   .small {
@@ -171,8 +195,27 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .collage {
-    padding-top: 132% !important;
+    padding-top: 77% !important;
   }
+}
+.medium {
+  padding-top: 57%;
+}
+@media screen and (max-width: 600px) {
+  .medium {
+    padding-top: 160% !important;
+  }
+}
+.medium-wtf {
+  padding-top: 120%;
+}
+@media screen and (max-width: 600px) {
+  .medium-wtf {
+    padding-top: 130% !important;
+  }
+}
+.left-hundred {
+  margin-left: 100px;
 }
 .full {
   padding-top: 76.5%;
@@ -185,13 +228,14 @@ a:hover {
     margin: 50px 0px;
   }
 }
-@media screen and (max-width: 600px) {
-  .fiftym {
-    margin: 50px 0px;
-  }
-}
 .fifty {
   margin: 50px 0px;
+}
+.fifty-top {
+  margin-top: 50px;
+}
+.hundred-top {
+  margin-top: 100px;
 }
 .square {
   padding-top: 52%;
@@ -210,6 +254,7 @@ a:hover {
 @media screen and (max-width: 600px) {
   .pushup {
     margin-top: -50px;
+    display: none;
   }
 }
 .edge-left {
@@ -218,12 +263,17 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .edge-left {
-    margin-left: -60px;
+    margin-left: 0px;
   }
 }
 .edge-right {
   margin-right: -120px;
-  background-position: bottom;
+  background-position: top right;
+}
+@media screen and (max-width: 600px) {
+  .edge-right {
+    margin-right: -60px;
+  }
 }
 #accent {
   position: absolute;

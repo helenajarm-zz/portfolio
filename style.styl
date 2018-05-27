@@ -6,7 +6,7 @@ Italic = "FoundersGrotesk-Italic",'Helvetica-Neue',sans-serif !important
 body
   text-align: left
   background-color white
-  font-size 16px
+  font-size 20px
   color black
   margin 32px 120px 0px 120px
   font-family Normal
@@ -42,8 +42,8 @@ h3
   line-height: line-height
 
 h4,p
-  font-size 18px
-  line-height: 28px
+  font-size 20px
+  line-height: 32px
   color: gray
 
 h4
@@ -56,7 +56,6 @@ p
 
 a
  color: gray
- font-family Italic
  font-weight normal
  text-decoration: none;
  padding-bottom:4px;
@@ -64,6 +63,16 @@ a
  &:hover
    padding-bottom:6px;
    border-bottom: 2px solid red;
+
+.subtitle
+  font-size: 16px
+  text-align: center
+  margin-top 10px
+
+li
+  display flex
+  h4
+    margin-right 40px
 
 .intro-header
   visibility: hidden
@@ -78,7 +87,7 @@ a
     padding: 180px 0px 100px;
 
 .background
-  background-position: top;
+  background-position: top
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -93,6 +102,7 @@ a
 .container-column
   display: flex;
   flex-direction: column;
+  width: 100%
 
 .width-half
   max-width 45%
@@ -101,6 +111,11 @@ a
 
 .width
   max-width: 40%;
+  @media screen and (max-width: 600px)
+    max-width: 100%;
+
+.width-70
+  width: 100%;
   @media screen and (max-width: 600px)
     max-width: 100%;
 
@@ -119,6 +134,10 @@ a
 .item
   margin: 0px 0px;
   width: 100%;
+  h4
+    margin-top -30px
+    font-size 16px
+    color rgba(0,0,0,.7)
 
 .tiny
   padding-top: 29%
@@ -127,7 +146,7 @@ a
     margin-top: 50px
 
 .small
-  padding-top: 34%
+  padding-top: 40%
   @media screen and (max-width: 600px)
     padding-top: 76.50%
 
@@ -138,7 +157,21 @@ a
 .collage
   padding-top: 40%
   @media screen and (max-width: 600px)
-    padding-top: 132% !important
+    padding-top:77% !important
+
+.medium
+  padding-top: 57%
+  @media screen and (max-width: 600px)
+    padding-top: 160% !important
+
+
+.medium-wtf
+  padding-top: 120%
+  @media screen and (max-width: 600px)
+    padding-top: 130% !important
+
+.left-hundred
+  margin-left 100px
 
 .full
   padding-top: 76.50%
@@ -148,12 +181,14 @@ a
   @media screen and (max-width: 600px)
     margin 50px 0px
 
-.fiftym
-  @media screen and (max-width: 600px)
-    margin 50px 0px
-
 .fifty
   margin 50px 0px
+
+.fifty-top
+  margin-top 50px
+
+.hundred-top
+  margin-top 100px
 
 .square
  padding-top: 52%
@@ -167,17 +202,20 @@ a
   margin-top -100px
   @media screen and (max-width: 600px)
     margin-top -50px
+    display none
 
 .edge-left
   margin-left -120px
   background-position left top
   @media screen and (max-width: 600px)
-    margin-left -60px
+    margin-left 0px
 
 
 .edge-right
   margin-right -120px
-  background-position bottom
+  background-position top right
+  @media screen and (max-width: 600px)
+    margin-right -60px
 
 #accent
   position: absolute
