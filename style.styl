@@ -1,5 +1,6 @@
 gray = rgba(0, 0, 0, 0.7)
 line-height = 24px
+Basic = Helvetica Neue, Arial, sans-serif
 Normal = "FoundersGrotesk",'Helvetica-Neue',sans-serif
 Italic = "FoundersGrotesk-Italic",'Helvetica-Neue',sans-serif !important
 
@@ -12,6 +13,10 @@ body
   font-family Normal
   @media screen and (max-width: 600px)
     margin 0px 40px
+
+#flowers
+  x: 0
+  y: 0
 
 
 h1,h2,h3,h4,p
@@ -43,19 +48,19 @@ h3
 
 h4,p
   color: gray
+  font-family: Arial
+  font-size 16px
+  line-height 28px
+
 
 h4
-  font-size 18px
-  line-height: 32px
   color rgba(0, 0, 0, 0.6)
+  line-height 32px
 
 
 p
   padding: 24px 0px;
   color: rgba(0, 0, 0, 0.6)
-  font-family: Helvetica-Neue,Arial,sans-serif
-  line-height 28px
-  font-size 16px
 
 
 a
@@ -64,6 +69,9 @@ a
  text-decoration: none;
  padding-bottom:1px;
  border-bottom: 1px solid gray;
+ hover
+   background: linear-gradient(-45deg, transparent, transparent 49%, red 49%, transparent 51%);
+   background-size: 10px 10px;
 
 .opacity
   opacity .5
@@ -80,7 +88,7 @@ li
 
 .intro-header
   visibility: hidden
-  padding:120px 0px 80px 0px;
+  padding:15% 0px 80px 0px;
   width: 55%;
   p
     margin-top 25px
@@ -138,7 +146,6 @@ li
   margin: 0px 0px;
   width: 100%;
   h4
-    margin-top -30px
     font-size 16px
     color rgba(0,0,0,.7)
 
@@ -172,10 +179,18 @@ li
  @media screen and (max-width: 600px)
   padding-top: 80%
 
+.mobile
+   padding-top: 69%
+   @media screen and (max-width: 600px)
+    padding-top: 80%
+
+.full
+  padding-top: 76.50%
+
 .square-ish
   padding-top: 93%
   @media screen and (max-width: 600px)
-    padding-top: 80%
+    padding-top: 90%
 
 .medium-wtf
   padding-top: 120%
@@ -185,8 +200,6 @@ li
 .left-hundred
   margin-left 100px
 
-.full
-  padding-top: 76.50%
 
 .hundred
   margin 100px 0px
@@ -230,12 +243,15 @@ li
   top: 0px
   right: 0px
   @media screen and (max-width: 600px)
-    width 80%
+    svg
+      width 100%
 
 #footer
   width 100%
   height 220px
   background-position bottom
+  svg
+    margin-bottom -5px
   @media screen and (max-width: 600px)
     width: 130%;
     height: 200px;
@@ -243,3 +259,5 @@ li
     margin-left: -40px;
     margin-right: -40px;
     background-size cover
+    svg
+      width 100%
