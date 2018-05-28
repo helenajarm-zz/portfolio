@@ -23,52 +23,57 @@
     -->
     <title>Helena Jaramillo - Product Designer, Bay Area</title>
   </head>
+  <div id ="accent">
+    <svg width="544px" height="336px">
+      <defs>
+          <pattern id="imgpattern" width="1" height="1" x="0" y="0">
+            <image xlink:href="images/flowers.png"  x="0" y="-0" width="200%" height="200%"
+             preserveAspectRatio="xMinYMin slice"/>
+          </pattern>
+      </defs>
+      <path fill="url(#imgpattern)"
+            d="M-5.68434189e-14,0 C19.6305995,64.6106454 64.6652055,105.746183 135.103818,123.406614 C240.761737,149.89726 339.910432,79.5247187 386.60154,180.303964 C417.728945,247.490127 469.95563,299.063268 543.281593,335.023385 L543.281593,0 L-5.68434189e-14,0 Z" />
+    </svg>
+  </div>
+
   <body>
-  <div id="accent" class="background" style="background-image: url(images/00.png);"></div>
   <div className="App">
       <div class="intro-header">
         <h1>Helena is a Product Designer.</h1>
-        <h4>Let's unpack that</h4>
         <p>
         My experience ranges from working in big tech companies like Google, to rising startups like TransferWise.
-        I'm currently looking for a team in the Bay Area that's trying to make the world a bit better for people who need it.
-        If you're a little idealistic like that, let's chat.
+        I'm currently looking for a team in the Bay Area, and open for chatting!
         </p>
       </div>
 
 
       <div class="block-header">
-        <h4> 01 </h4>
+          <h3 style="color: rgba(0, 0, 0, 0.4)">01</h3>
         <h2>Making the complex simple, for people around the globe.</h2>
       </div>
-
-
       <div class="container">
-        <div class="project width">
-          <h3>TransferWise</h3>
-          <h4>Spring 2016 - Summer 2018</h4>
-          <p>Led design for our Send Money experience. As part of that, I re-designed
-          the Sign Up and Send Money flows, as well as our "calculator" - a core component that allows customers to
-          understand our pricing. </p>
-          <h4><a target=_blank href="https://transferwise.com/">Check it out </a></h4>
+            <div class="item background collage edge-left first "  style="background-image: url(images/01.png);"></div>
+          <div class="container-column fifty width-half">
+            <div class="project">
+              <h3>TransferWise</h3>
+              <h4>Spring 2016 - Summer 2018</h4>
+              <p>Led design for our Send Money experience. As part of that, I re-designed
+              the Sign Up and Send Money flows, as well as our "calculator" - a core component that allows customers to
+              understand our pricing. </p>
+              <h4><a target=_blank href="https://transferwise.com/">Check it out </a></h4>
+            </div>
+            <div class="item background square-ish fifty "  style="background-image: url(images/02.png);"></div>
+        </div>
+      </div>
+
+      </div>
+      <div class="container">
+        <div class="item full background fifty"  style="background-image: url(images/03.png);">
         </div>
       </div>
 
       <div class="container">
-        <div class="item hundred background small first"  style="background-image: url(images/01.png);">
-        </div>
-        <div class="item background medium"  style="background-image: url(images/02.png);">
-        </div>
-      </div>
-
-      <Fade>
-      <div class="container">
-        <div class="item full background hundred"  style="background-image: url(images/03.png);">
-        </div>
-      </div>
-    </Fade>
-      <div class="container">
-          <div class="item first background full edge-left pushup"  style="background-image: url(images/04.png);"></div>
+          <div class="item first background full edge-left pushup opacity"  style="background-image: url(images/04.png);"></div>
           <div class="container-column width-half">
             <div class="project">
               <h3>Google</h3>
@@ -82,7 +87,7 @@
       </div>
 
       <div class="block-header">
-        <h4>02</h4>
+        <h3 style="color: rgba(0, 0, 0, 0.4)">02</h3>
         <h2>Passionate about designing for those who need it most.</h2>
       </div>
       <div class="container">
@@ -114,7 +119,7 @@
 
 
       <div class="block-header">
-        <h4>03</h4>
+          <h3 style="color: rgba(0, 0, 0, 0.4)">03</h3>
         <h2>Learned the basics from world-class teams.</h2>
       </div>
       <div class="container">
@@ -138,7 +143,7 @@
       </div>
 
     <div class="block-header">
-      <h4>04</h4>
+        <h3 style="color: rgba(0, 0, 0, 0.4)">04</h3>
       <h2>Curious about more than just product design.</h2>
     </div>
     <div class="container">
@@ -155,7 +160,7 @@
     </div>
 
     <div class="block-header">
-      <h4>06</h4>
+        <h3 style="color: rgba(0, 0, 0, 0.4)">05</h3>
       <h2>What's up next?</h2>
       <p>I am looking for a new team in the Bay Area in the Summer of 2018.  I am open to different opportunities but feel particularly excited about microfinances, women's issues, healthcare, poverty relief, and emerging markets.
       If you know of an opportunity, or just want to have a chat - then my inbox is always open.</p>
@@ -178,7 +183,12 @@
     </script>
 
   </body>
-  <div id="footer" class="background" style="background-image: url(images/Footer.png);"></div>
+  <div id ="footer">
+    <svg width="995" height="255">
+      <path fill="url(#imgpattern)"
+            d="M44.8322172,255.16546 C2.56797996,168.933274 -9.68075652,117.50033 8.08600773,100.866629 C34.7361541,75.9160783 94.7321798,140.510819 199.50808,100.866629 C304.283979,61.2224395 306.503605,-6.25523092 394.969364,0.466668846 C483.435124,7.18856861 455.574766,126.116226 569.825051,126.116226 C684.075336,126.116226 793.243566,35.8528724 873.495582,35.8528724 C926.996926,35.8528724 967.831732,108.957068 996,255.16546 L44.8322172,255.16546 Z" />
+    </svg>
+  </div>
   </div>
 
 </html>
